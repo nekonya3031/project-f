@@ -4,7 +4,123 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
 
+<body>
+    <div class="request-top">
+        <h1>ТИПА НАЗВАНИЕ</h1>
+    </div>
+
+    <ul class="images">
+        <li><img src="pictures/logoTemp.jpg"></li>
+        <li><img src="pictures/logoTemp.jpg"></li>
+        <li><img src="pictures/logoTemp.jpg"></li>
+        <li><img src="pictures/logoTemp.jpg"></li>
+      </ul> 
+
+    <div class="row">
+        <div class="column">
+            <iframe src="https://calendar.google.com/calendar/embed?src=classroom115801709388971923433%40group.calendar.google.com&ctz=Europe%2FMoscow" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        <div class="column">
+            <div class="events">
+                <p class="events">Наши события</p>
+                    <ul class="events">
+                        <li>Новый кофе</li>
+                        <li>Ура у нас есть сайт</li>
+                        <li>Сходка подписчиков Светы голубевой 10.06.2023</li>
+                    </ul>
+            <div>
+        </div>
+    </div>
 </body>
 </html>
+
+<style>
+
+body {
+  background-color: #ffdead;
+}
+
+h1 {
+    color:#FFF8DC;
+    text-align:center;
+    font-size: 48px;
+    font-weight: bold;
+    font-family:"comic sans ms";
+    text-transform: capitalize;
+}
+/*События*/
+ul.events {
+    background-color: #8B4513;
+    color: wheat;
+    font-size: 28px;
+}
+
+p.events{
+  color:#FFF8DC;
+    text-align:center;
+    font-size: 38px;
+    font-weight: bold;
+    font-family:"comic sans ms";
+    text-transform: capitalize;
+}
+
+div.events{
+    background-color: #8B4513;
+  color:#FFF8DC;
+    text-align:center;
+    font-size: 38px;
+    font-weight: bold;
+    font-family:"comic sans ms";
+    text-transform: capitalize;    
+}
+
+/**/
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*прокрутка пикч*/
+
+ul.images {
+    margin: 1%;
+    padding: 0;
+    white-space: nowrap;
+    width: 98%;
+    overflow-x: auto;
+    background-color: #ddd;
+  }
+  ul.images li {
+    display: inline;
+    width: 150px;
+    height: 150px;
+  }
+
+/*FIX TOP*/
+
+.request-bottom {
+background-color: white;
+padding-bottom: 3%;
+position: relative;
+}
+
+.request-top {
+background-color: #8B4513;
+padding-top: 3%;
+padding-bottom: 3%;
+position: fixed;
+z-index: 1000;
+width: 99%;
+height: 30px;
+}
+
+</style>
